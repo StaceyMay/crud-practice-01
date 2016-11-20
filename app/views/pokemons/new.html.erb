@@ -1,0 +1,36 @@
+<center>
+<h1> Enter New Pokemon Information: </h1>
+
+<%= form_tag '/pokemons/create', method: :post do %>
+<div>
+  <%= label_tag :name %>:
+  <%=text_field_tag :name  %>
+</div>
+
+<div>
+  <%= label_tag :image %>:
+  <%=text_field_tag :image %>
+</div>
+
+<div>
+  <%= label_tag :hp %>:
+  <%=text_field_tag :hp %>
+</div>
+
+<div>
+  <%= label_tag :attack %>:
+  <%=text_field_tag :attack %>
+</div>
+
+<div>
+  <%= label_tag :defense %>:
+  <%=text_field_tag :defense %>
+</div>
+
+  <div>
+  <%= submit_tag "Catch Pokemon!" %>
+  </div>
+</div>
+
+<% end %>
+</center>

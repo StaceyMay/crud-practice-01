@@ -1,0 +1,14 @@
+<div class="center_everything">
+
+<h1> Pokemon: </h1>
+<img src=<%= @pokemon.image %>>
+<h2>Pokemon Name:<%= @pokemon.name %></h2>
+<h2>HP:<%= @pokemon.hp %></h2>
+<h2>Attack:<%= @pokemon.attack %></h2> 
+<h2>Defense:<%= @pokemon.defense%></h2> 
+<p ><a class="btn btn-info btn-md" href="/pokemons/<%= @pokemon.id %>/edit" role="button">Evolve</a>
+<%= link_to "Let Pokemon Go", "/pokemons/#{@pokemon.id}", method: :delete , class: "btn btn-danger"%></p>
+
+<%= link_to "Go Home", "/pokemons" %> 
+</div>
+</div>

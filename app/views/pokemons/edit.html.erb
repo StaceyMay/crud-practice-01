@@ -1,0 +1,36 @@
+<center>
+
+<h1> Enter New Pokemon Information: </h1>
+
+<%= form_tag "/pokemons/#{@pokemon.id}", method: :patch do %>
+<div>
+  <%= label_tag :name %>:
+  <%=text_field_tag :name, @pokemon.name %>
+</div>
+
+<div>
+  <%= label_tag :image %>:
+  <%=text_field_tag :image, @pokemon.image%>
+</div>
+
+<div>
+  <%= label_tag :hp %>:
+  <%=text_field_tag :hp, @pokemon.hp%>
+</div>
+
+<div>
+  <%= label_tag :attack %>:
+  <%=text_field_tag :attack, @pokemon.attack %>
+</div>
+
+<div>
+  <%= label_tag :defense %>:
+  <%=text_field_tag :defense, @pokemon.defense %>
+</div>
+
+  <div>
+  <%= submit_tag "Update Pokemon!" %>
+  </div>
+</div>
+<% end -%>
+</center>

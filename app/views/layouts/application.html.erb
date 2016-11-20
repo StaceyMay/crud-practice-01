@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NewPokemon</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="/pokemons">Home</a></li>
+      <li role="presentation"><a href="/pokemons/new">Catch a Pokemon!</a></li>
+    </ul>
+        <%= yield %>
+  </body>
+</html>

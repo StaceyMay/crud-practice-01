@@ -1,0 +1,24 @@
+// Place all the styles related to the pokemons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+  height: auto;
+  width: auto;
+  max-height: 125px;
+}
+
+.center_everything {
+  text-align: center;
+}
+
+.jumbotron {
+    border-radius: 25px;
+    background-image: url(pink_rice.png);
+}
+
+body {
+  background-image: url(congruent_pentagon.png);
+  font-family: 'Righteous', cursive;
+
+}

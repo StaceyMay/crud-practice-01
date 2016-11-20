@@ -1,0 +1,20 @@
+<div class ="container"
+
+<div class="row">
+  <%@pokemons.each do |pokemon|%>
+    <div class="col-md-4">
+    <div class="jumbotron">
+    <div class="center-everything">
+      <p> <a href="/pokemons/<%=pokemon.id%>"><img src=<%= pokemon.image %>></a></p>
+      <h5>Pokemon Name:<%=pokemon.name %> </h5>
+      <h5>HP:<%=pokemon.hp %> </h5>
+      <h5>Attack:<%=pokemon.defense %> </h5>
+      <h5>Defense:<%=pokemon.attack %> </h5>
+      <p><a class="btn btn-info btn-xs" href="/pokemons/<%= pokemon.id %>/edit" role="button">Evolve</a>
+      <%= link_to "Free Pokemon", "/pokemons/#{pokemon.id}", method: :delete , class: "btn btn-danger btn-xs"%></p>
+    </div>
+    </div>
+    </div>
+  <% end -%>
+</div>
+</div>
